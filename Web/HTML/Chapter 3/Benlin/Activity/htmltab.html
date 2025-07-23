@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Table World</title>
+</head>
+<body>
+
+<!-- Outer wrapper table -->
+<table border="1" width="100%" cellspacing="0" cellpadding="10">
+
+  <!-- Header -->
+  <tr bgcolor="#3399ff">
+    <td colspan="2" align="center">
+      <h2>Welcome to HTML Table World</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" height="80">
+    </td>
+  </tr>
+
+  <!-- Content area with Sidebar and Main content -->
+  <tr valign="top">
+    <!-- Sidebar -->
+    <td width="20%">
+      <b>Navigation</b><br><br>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">HTML Basics</a></li>
+        <li><a href="#">Table Examples</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <br>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" width="80">
+    </td>
+
+    <!-- Main content -->
+    <td width="80%">
+      <h4>About This Page</h4>
+      <p>This webpage is created using only HTML and table layout. It includes header, sidebar, and footer using table cells.</p>
+      <p><b>Student Challenge: Complex HTML Table</b></p>
+      <p>Below is a tough table that demonstrates row and column spans. Students must understand how cells merge and align.</p>
+
+      <!-- Inner table -->
+      <table border="1" cellpadding="5" cellspacing="0">
+        <tr bgcolor="#cce5ff">
+          <th rowspan="2">ID</th>
+          <th colspan="2">Name</th>
+          <th rowspan="2">Course</th>
+          <th colspan="2">Scores</th>
+          <th rowspan="2">Grade</th>
+        </tr>
+        <tr bgcolor="#cce5ff">
+          <th>First</th>
+          <th>Last</th>
+          <th>Mid</th>
+          <th>Final</th>
+        </tr>
+        <tr>
+          <td>101</td>
+          <td>John</td>
+          <td>Doe</td>
+          <td>HTML</td>
+          <td>45</td>
+          <td>50</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>102</td>
+          <td>Jane</td>
+          <td>Smith</td>
+          <td>CSS</td>
+          <td>42</td>
+          <td>48</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td>103</td>
+          <td>Sam</td>
+          <td>Wilson</td>
+          <td>HTML</td>
+          <td>46</td>
+          <td>49</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>104</td>
+          <td colspan="2">Nina George</td>
+          <td>JavaScript</td>
+          <td>40</td>
+          <td>44</td>
+          <td>B</td>
+        </tr>
+      </table>
+
+      <br><br>
+      <center>
+        <h1>HTML</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" height="200">
+      </center>
+    </td>
+  </tr>
+
+  <!-- Footer -->
+  <tr bgcolor="#3399ff">
+    <td colspan="2" align="center">
+      © 2025 HTML Table Design. Designed for Educational Purpose.
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
