@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Travel Booking Website</title>
+</head>
+
+<body>
+    <table border="0" width="100%" cellspacing="0" cellpadding="10" bgcolor="white">
+
+        <tr>
+            <td colspan="2">
+                <header>
+                    <table width="100%">
+                        <tr>
+                            <td width="10%">
+
+                                <img src="images/tourism logo.jpg" alt="Logo" width="80" height="80">
+                            </td>
+                            <td align="left">
+                                <h1>Global Explorer</h1>
+                            </td>
+                        </tr>
+                    </table>
+                </header>
+            </td>
+        </tr>
+
+        <tr bgcolor="#3399ff">
+            <td colspan="2">
+                <nav>
+                    <table width="100%">
+                        <tr align="center">
+                            <td><a href="home.html"><b>Home</b></a></td>
+                            <td><a href="destination.html"><b>Destination</b></a></td>
+                            <td><a href="book.html"><b>Book Now</b></a></td>
+                            <td><a href="contact.html"><b>Contact</b></a></td>
+                        </tr>
+                    </table>
+                </nav>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Travel Booking Form</h2>
+
+    <form>
+        
+            Traveler Information
+            <table border="0" cellpadding="8">
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="name" ></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="email" ></td>
+                </tr>
+                <tr>
+                    <td>Destination:</td>
+                    <td>
+                        <select name="destination">
+                            <option value="paris">Paris, France</option>
+                            <option value="tokyo">Tokyo, Japan</option>
+                            <option value="newyork">New York, USA</option>
+                            <option value="rome">Rome, Italy</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date of Travel:</td>
+                    <td><input type="date" name="date" ></td>
+                </tr>
+                <tr>
+                    <td>Number of Travelers:</td>
+                    <td><input type="number" name="travelers" min="1" ></td>
+                </tr>
+                <tr>
+                    <td>Preferred Class:</td>
+                    <td>
+                        <input type="radio" name="class" value="Economy" checked> Economy
+                        <input type="radio" name="class" value="Business"> Business
+                        <input type="radio" name="class" value="First"> First
+                    </td>
+                </tr>
+                <tr>
+                    <td>Special Requests:</td>
+                    <td><textarea name="requests" rows="4" cols="30"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Agree to Terms:</td>
+                    <td><input type="checkbox" name="terms" required> I agree to the terms and conditions</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset"></td>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
