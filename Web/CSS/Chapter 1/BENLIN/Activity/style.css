@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('images/wp7933626-cristiano-ronaldo-4k-desktop-wallpapers.jpg');
+  background-size: 100% 200%;
+  background-repeat: no-repeat;
+}
+
+.content {
+  padding: 100px 50px;
+  color: #000;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 18px;
+}
