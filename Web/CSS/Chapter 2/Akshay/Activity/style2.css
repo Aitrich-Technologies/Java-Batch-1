@@ -1,0 +1,9 @@
+.media{
+    width: 500px;
+    height: 400px;
+    background-color: aliceblue;
+    border:rgb(0, 0, 0) solid 1px;
+    border-width: 1px;
+    position: absolute;left: 200px;
+    position: absolute;top: 100px;
+}
