@@ -1,0 +1,116 @@
+.box{
+  position: absolute;left: 50px;
+  top: 10px;
+  width: 120px;
+  height: 120px;
+  background-color: steelblue;
+  margin: 100px auto;
+  transform: rotate(45deg);
+}
+ .scale-img {
+      display: block;
+      width: 150px;
+      margin: 20px auto;
+      height: 150px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      position: absolute;left: 200px;
+    }
+
+    .scale-img:hover {
+      transform: scale(1.2); 
+    }
+.skew-btn {
+    position: absolute;top: 100px;
+    left: 380px;
+      padding: 15px 40px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      transform: skewX(20deg) skewY(10deg);
+      transition: transform 0.3s ease;
+    }
+.translate-box{
+  position: absolute;top: 150px;
+     width: 120px;
+  height: 120px;
+  background-color: rgb(220, 63, 63);
+  margin: 50px;
+  transform: translate(100px, 50px);
+}
+.card{
+  background-color: aqua;
+  width: 200px;
+  height: 100px;
+  position: absolute;top: 400px;
+}
+.card:hover{
+  transform: rotatex(180deg);
+  transition: transform 1.5s;
+}
+
+.color-btn{
+  width: 100px;
+  height: 100px;
+  background-color:yellow;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 100px;
+  transition: all 0.5s;
+  position: absolute;left: 300px;
+  top: 200px;
+}
+.color-btn:hover{
+  background-color: blue;
+  color: white;
+}
+.border-box{
+  width: 120px;
+  height: 120px;
+  position: absolute;left: 600px;
+  top: 120px;
+  background-color: rgb(74, 70, 70);
+  text-align: center;
+  line-height: 120px;
+  border: 2px solid transparent;
+  transition: border 0.5s;background-color: 0.5s;
+}
+.border-box:hover{
+  border: 4px solid red;
+  background-color: green;
+}
+.fade-box{
+  position: absolute;left: 550px;
+  top: 250px;
+  width: 150px;
+  height: 120px;
+  margin-top: 20px;
+  background-color: pink;
+  text-align: center;
+  line-height: 100px;
+  opacity: 1;
+  transition: opacity 0.8s;
+}
+.fade-box:hover{
+  opacity: 0.2;
+}
+.hover-btn{
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 16px;
+  background: orange;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s; font-size: 0.5s;
+}
+.hover-btn:hover{
+  background: darkorange;
+  font-size: 20px;
+  color: white;
+}
+
+
+
+      
