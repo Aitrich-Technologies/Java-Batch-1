@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: gray;
+}
+
+.b1 {
+    transition: background-color 0.3s ease;
+    background-color: black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.b1:hover {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.box {
+    width: 150px;
+    height: 100px;
+    background-color: steelblue;
+    border: 4px solid #333;
+    border-radius: 8px;
+    transition: width 0.5s ease, height 0.5s ease, border-color 0.5s ease;
+}
+
+.box:hover {
+    width: 250px;
+    height: 150px;
+    border-color: blue;
+}
+
+.fade-box {
+    width: 200px;
+    height: 120px;
+    background-color: crimson;
+    border-radius: 10px;
+    opacity: 1;
+    text-align: center;
+    
+    transition: opacity 0.8s ease;
+    
+}
+
+.fade-box:hover {
+    opacity: 0.2;
+    
+}
+.b2{
+    background-color: greenyellow;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    border: 3px solid #333;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 150px;
+    border-radius: 5px;
+}
+.b2:hover {
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.4s ease, color 0.4s ease, font-size 0.4s ease;
+}
