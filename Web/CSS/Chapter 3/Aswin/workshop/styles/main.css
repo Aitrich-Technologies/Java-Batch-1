@@ -31,13 +31,19 @@ body{
     top: 50%;
     left: 50%;
     overflow: hidden;
+    
 }
 .wrapper1{
     width: 100%;
-    display: flex;
-    animation: slide 5s infinite;
+    display: flex;    
 }
+.wrapper1 img{
+    width: 100%;
+    margin-left: 210px;
+    margin-top: 100px;
+    animation: slide 5s infinite;
 
+}
 @keyframes slide{
     0%{
         transform: translateX
