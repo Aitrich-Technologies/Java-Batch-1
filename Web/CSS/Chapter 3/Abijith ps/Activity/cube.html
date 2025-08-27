@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freaking cube</title>
+    <style>
+        .cube-container {
+  perspective: 1000px; /* Creates the 3D perspective */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cube {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotateCube 10s infinite linear; /* Apply the animation */
+}
+
+.face {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background-color: rgba(0, 123, 255, 0.7); /* Example styling */
+  border: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: white;
+}
+
+.front { transform: translateZ(100px); }
+.back { transform: rotateY(180deg) translateZ(100px); }
+.right { transform: rotateY(90deg) translateZ(100px); }
+.left { transform: rotateY(-90deg) translateZ(100px); }
+.top { transform: rotateX(90deg) translateZ(100px); }
+.bottom { transform: rotateX(-90deg) translateZ(100px); }
+@keyframes rotateCube {
+  0% { transform: rotateX(0deg) rotateY(0deg); }
+  100% { transform: rotateX(360deg) rotateY(360deg); }
+}
+    </style>
+</head>
+<body>
+    <div class="cube-container">
+  <div class="cube">
+    <div class="face front"></div>
+    <div class="face back"></div>
+    <div class="face right"></div>
+    <div class="face left"></div>
+    <div class="face top"></div>
+    <div class="face bottom"></div>
+  </div>
+</div>
+</body>
+</html>

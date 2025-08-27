@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sliding Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      background: #1e1e2f;
+      font-family: sans-serif;
+    }
+
+    nav {
+      background: #292c3e;
+      padding: 20px 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      position: relative;
+      overflow: hidden;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 10px 15px;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+    }
+
+    nav ul li::before {
+      content: attr(data-text);
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: #00ffc3;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+      padding: 10px 15px;
+      z-index: 0;
+    }
+
+    nav ul li:hover::before {
+      transform: translateY(0%);
+    }
+
+    nav ul li:hover a {
+      transform: translateY(-100%);
+      transition: transform 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li data-text="Home"><a href="#">Home</a></li>
+    <li data-text="About"><a href="#">About</a></li>
+    <li data-text="Services"><a href="#">Services</a></li>
+    <li data-text="Contact"><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+</body>
+</html>
