@@ -28,24 +28,16 @@ body{
     width: 100%;
     position: absolute;
     transform: translate(-50%,-50%);
-    border-radius: 10px;
     top: 50%;
     left: 50%;
     overflow: hidden;
-    
 }
 .wrapper1{
     width: 100%;
     display: flex;
-    animation: slide 5s infinite;    
+    animation: slide 5s infinite;
 }
-.wrapper1 img{
-    width: 100%;
-    margin-left: 210px;
-    margin-top: 100px;
-    object-fit: cover;
 
-}
 @keyframes slide{
     0%{
         transform: translateX

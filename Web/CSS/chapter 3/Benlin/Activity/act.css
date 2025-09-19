@@ -1,0 +1,373 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background: coral;
+  margin: 20px auto;
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+   .scale-img {
+  display: block;
+  margin: 20px auto;
+  transition: transform 0.3s ease;
+  width: 170px;
+  height:120px;
+}
+.scale-img:hover {
+  transform: scale(1.3);
+}
+.skew-btn {
+  padding: 10px 20px;
+  background: teal;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transform: skewX(20deg) skewY(10deg);
+}
+.translate-box {
+  width: 120px;
+  height: 60px;
+  background: purple;
+  margin: 20px auto;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(100px, 50px);
+}
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 40px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: coral;
+  margin: 20px auto;
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+
+.scale-img {
+  display: block;
+  margin: 20px auto;
+  transition: transform 0.3s ease;
+}
+.scale-img:hover {
+  transform: scale(1.3);
+}
+
+
+.skew-btn {
+  padding: 10px 20px;
+  background: teal;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transform: skewX(20deg) skewY(10deg);
+}
+
+
+.translate-box {
+  width: 120px;
+  height: 60px;
+  background: purple;
+  margin: 20px auto;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(100px, 50px);
+}
+
+.card {
+  background-color: rgb(255, 0, 0);
+  width: 200px;
+  height: 100px;
+}
+.card:hover{
+    transform: rotatex(180deg);
+    transition: transform 0.5s;
+}
+.color-btn {
+  padding: 10px 20px;
+  background: lightblue;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.color-btn:hover {
+  background: royalblue;
+  color: white;
+}
+
+.size-box {
+  width: 100px;
+  height: 100px;
+  background: lightgreen;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 100px;
+  transition: all 0.5s;
+}
+.size-box:hover{
+  width: 150px;
+  height: 150px;
+}
+
+.border-box {
+  width: 120px;
+  height: 120px;
+  margin-top: 20px;
+  background: rgb(0, 0, 0);
+  text-align: center;
+  line-height: 120px;
+  border: 2px solid transparent;
+  transition: border 0.5s, background-color 0.5s;
+}
+.border-box:hover {
+  border: 4px solid red;
+  background-color: rgb(0, 255, 17);
+}
+
+.fade-box {
+  width: 150px;
+  height: 100px;
+  margin-top: 20px;
+  background: plum;
+  text-align: center;
+  line-height: 100px;
+  opacity: 1;
+  transition: opacity 0.8s;
+ position: absolute;top:800px;left: 500px;
+}
+.fade-box:hover {
+  opacity: 0.2;
+}
+.hover-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 16px;
+  background: orange;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s, font-size 0.5s;
+}
+.hover-btn:hover {
+  background: darkorange;
+  font-size: 20px;
+  color: white;
+}
+
+
+.ball {
+  width: 50px;
+  height: 50px;
+  background: red;
+  border-radius: 50%;
+  position: relative;
+  animation: slide 1s infinite alternate;
+}
+@keyframes slide {
+  0%,100% {
+    transform: translateX(20%);
+  }
+  50% { transform: translateX(0%); }
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #ccc;
+  border-top: 6px solid blue;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+.fade-box {
+  font-size: 20px;
+  animation: fade 2s infinite;
+}
+@keyframes fade {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.slide-text {
+  font-size: 24px;
+  animation: slide 3s infinite;
+  position: relative;
+}
+@keyframes slide {
+  0% { left: -200px; opacity: 0; }
+  50% { left: 50px; opacity: 1; }
+  100% { left: -200px; opacity: 0; }
+}
+
+
+.pulse {
+  width: 80px;
+  height: 80px;
+  background: purple;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+}
+
+/* 16. Flip Card */
+.flip-card {
+  width: 150px;
+  height: 200px;
+  perspective: 1000px;
+}
+.flip-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+.flip-front, .flip-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: lightblue;
+}
+.flip-back {
+  transform: rotateY(180deg);
+  background: lightgreen;
+}
+
+/* 17. Ripple Button */
+.akshay {
+  padding: 10px 20px;
+  background: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+  position: absolute;top: 100px;left: 50px;
+}
+.akshay:hover::after {
+  content: "";
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 10px; height: 10px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  animation: ripple 1s ease-out;
+}
+@keyframes ripple {
+  to { transform: translate(-50%, -50%) scale(10); opacity: 0; }
+}
+
+.cube {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotate 5s infinite linear;
+}
+.face {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(0,0,255,0.6);
+  border: 1px solid #000;
+}
+.front { transform: translateZ(50px); }
+.back { transform: rotateY(180deg) translateZ(50px); }
+.left { transform: rotateY(-90deg) translateZ(50px); }
+.right { transform: rotateY(90deg) translateZ(50px); }
+.top { transform: rotateX(90deg) translateZ(50px); }
+.bottom { transform: rotateX(-90deg) translateZ(50px); }
+@keyframes rotate {
+  from { transform: rotateX(0) rotateY(0); }
+  to { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+.slider {
+  width: 300px; height: 200px;
+  overflow: hidden;
+  position: absolute;top: 1400px;left: 700px;
+}
+.slides {
+  display: flex;
+      animation: slideShow 5s infinite;
+}
+.slides img { width: 200px; height: 200px; }
+@keyframes slideShow {
+  0%,20% { transform: translateX(0); }
+  25%,45% { transform: translateX(-300px); }
+  50%,70% { transform: translateX(-600px); }
+  75%,100% { transform: translateX(0px); }
+}
+
+/* 20. Animated Navigation Menu */
+.nav {
+  display: flex;
+  gap: 20px;
+  background: #333;
+  padding: 10px;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  padding: 5px;
+}
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: yellow;
+  transition: width 0.3s;
+}
+.nav a:hover::after {
+  width: 100%;
+}
+    .btn1 {
+      background-color: #1100ff; /* Green */
+      color: rgb(0, 255, 242);
+      padding: 12px 24px;
+      border: solid;color: #000;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s; /* smooth effect */
+    }
+
+    .btn1:hover {
+      background-color: #a04545; /* Darker green */
+      transform: scale(7.05); /* Slightly bigger */
+    }
