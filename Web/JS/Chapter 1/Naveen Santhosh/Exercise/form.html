@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="img-cur">
+            <div class="header">
+                <img src="images/Group 8.png">
+                <img src="images/Hire me Now.png" style="position: absolute;margin-top: 20px;margin-left: 20px;">
+            </div>
+            <div class="slider1">
+                <div class="wrapper1">
+                    <img src="images/Group.png">
+                    <img src="images/Group.png">
+                    <img src="images/Group.png">
+                </div>
+            </div>
+        </div>
+        <div class="login">
+            <form onsubmit="return validateform()">
+                <table style="position: absolute;margin-left: 10px;width: 500px;height: 350px;margin-top: 150px;">
+                    <tr>
+                        <th colspan="2">
+                            <p style="font-style: Mulish;">Sign in to Admin Dashboard</p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><span class="sp1">Email</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="email" placeholder="   input your email in here" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><span class="sp1">Password</span></td>
+                        <td>
+                            <p id="errorEmail"
+                                style="color: red; font-size: 15px; margin-left: -270px; margin-top: -35px;"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="password" placeholder="   input your password in here"
+                                id="password"></td>
+                        <td>
+                            <p id="errorPass"
+                                style="color: red; font-size: 15px; margin-left: -270px; margin-top:20px;"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><span class="forgot">Forgot passwod?</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Sign In" id="submit" class="button"></td>
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+
+    </div>
+    <script>
+        function validateform() {
+            console.log("function called")
+            const email = document.getElementById("email").value.trim();
+            const pass = document.getElementById("password").value.trim();
+            const erroremail = document.getElementById("errorEmail");
+            const errorpass = document.getElementById("errorPass");
+console.log(email)
+console.log(pass)
+            erroremail.innerText ="";
+            errorpass.innerText ="";
+
+
+            const emailRegx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+             if (email ==="") {
+                erroremail.innerText = "****email  cannot be empty****";
+                // return false;
+            }else if(!emailRegx.test(email)){
+                erroremail.innerText = "****email must be valid****";
+                return false;
+            }
+
+
+            if (pass ==="") {
+                errorpass.innerText = "****password cannot be empty****";
+                return false;
+            }else if(pass.length<=6){
+                errorpass.innerText = "****password must be 6 digits****";
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+
+</html>
