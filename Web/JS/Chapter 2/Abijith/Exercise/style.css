@@ -1,0 +1,41 @@
+#leftBar{
+    background-color: #0F7FBE;
+    width: 15%;
+    height: 730px;
+    color: white;
+    font-weight: bold;
+    text-align: justify;
+    align-content: center;
+}
+#leftBar li{
+    position: relative;
+    top: -50px;
+}
+#mainBlock{
+    width: 85%;
+    height: 100%;
+    position: absolute;
+    top: 8px;
+    left: 230px;
+}
+#topItems{
+    position: absolute;
+    right:50px; 
+}
+#shortList{
+    position: relative;
+    left:50px ;
+    top: 100px;
+}
+#content{
+    padding: 50px;
+    position: relative;
+    top: 30px;
+    display:grid;
+    grid-template-columns: repeat(2 , 0.5fr);
+    gap: 20px;
+    
+}
+#content img{
+    width: 70px;
+}
