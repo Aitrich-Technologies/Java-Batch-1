@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para"></p>
+    <button id="button" onclick="return confirmStart()">
+    Confirm</button>
+    <script>
+        function confirmStart() {
+            if (confirm("Are you ready to start the quiz?")) {
+                document.getElementById("para").innerText= "Welcome to the Quiz!";
+                document.getElementById("button").style.backgroundColor = "orange";
+            }
+            else{
+              document.getElementById("para").innerText="Try Again !";
+            }
+        }
+    </script>
+        Start Quiz
+    </button>
+</body>
+</html>

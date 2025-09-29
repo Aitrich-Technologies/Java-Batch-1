@@ -43,7 +43,7 @@ const username = document.getElementById("username").value.trim();
     errorElement.innerText = "Username is required.";
     return false;
   }else if (!alphabetRegex.test(username)) {
-    errorElement.innerText = "Username must contain only letters (A–Z or a–z).";
+    errorElement.innerText = "Username must contain only letters (A-Z or a-z).";
     return false;
   }
 
