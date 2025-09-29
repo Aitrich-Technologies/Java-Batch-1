@@ -32,7 +32,7 @@ nav a:hover{
     background: #fff;
     border-radius: 10px;
     border: 2px solid orange;
-    transition: transform 0.3s; /* smooth scaling */
+    transition: transform 0.3s; 
 }
 
 .about:hover {

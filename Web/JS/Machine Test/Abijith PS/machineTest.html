@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: crimson; position: absolute; left: 660px; top: 70px;">NOW RUNNING</h1>
+    <div style="display: flex; gap: 40px; position: absolute; left: 500px; top: 150px; border: double 10px red; padding: 30px;" >
+    <div id="Div1"><img src="Images/images.jpg" width="250px" height="365px"><br><br>
+    <button id = 'Btn1'onclick="book1()" style="position: absolute; left: 100px;">Book Now!</button>
+    </div>
+    <div id="Div2"><img src="Images/250px-Hridayapoorvam_Poster.png" width="250px">
+    <button id = 'Btn2' onclick="book2()" style="position: absolute; left: 390px; top: 415px;">Book Now!</button>
+    </div>
+    </div>
+
+    <h2 id = 'bkMsg' style="position: absolute; top: 700px; left: 640px;"></h2>
+
+    <script>
+        const Btn1 = document.getElementById('Btn1');
+        const Btn2 = document.getElementById('Btn2');
+        const bkMsg = document.getElementById('bkMsg');
+
+        function book1(){
+            alert('Confirm Booking?');
+            Btn1.style.backgroundColor='green';
+            Btn1.style.color='yellow'; 
+            bkMsg.textContent = `Successfully booked tickets for Lokah. ` 
+        };
+         function book2(){
+            alert('Confirm Booking?');
+            Btn2.style.backgroundColor='green';
+            Btn2.style.color='yellow'; 
+            bkMsg.textContent = `Successfully booked tickets for Hrudhayapoorvam. ` 
+        };
+    </script>
+</body>
+</html>
