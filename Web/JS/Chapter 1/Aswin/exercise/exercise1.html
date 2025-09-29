@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise1</title>
+</head>
+<style>
+    body {
+        display: flex;
+        height: 100vh;
+    }
+
+    .left {
+        flex: 1;
+
+        margin-top: 100px;
+        width: 300px;
+        background-image: url(images/Group.png);
+        background-size: contain;
+        animation: slide 5s infinite;
+    }
+
+    @keyframes slide {
+        0% {
+            background-position: 0 0;
+        }
+
+        100% {
+            background-position: -2000px 0;
+        }
+    }
+
+    .header {
+        position: absolute;
+        width: 250px;
+        height: 68px;
+        margin-left: 300px;
+        margin-top: 10px;
+    }
+
+    .jobie {
+        position: absolute;
+        width: 250px;
+        height: 68px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .right {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-box {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .login-box h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        margin-left: 50px;
+    }
+
+    .login-box label {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 40px;
+    }
+
+    .login-box input {
+        width: 350px;
+        padding: 16px;
+        border-radius: 6px;
+        border-color: blueviolet;
+    }
+
+    .pswd {
+        font-size: 14px;
+        font-weight: 400;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 280px;
+    }
+
+    .login-box button {
+        width: 390px;
+
+        height: 50px;
+        border-radius: 6px;
+        background-color: blueviolet;
+        color: white;
+
+        margin-top: 60px;
+    }
+
+    .login-box p{
+        color: red;
+    }
+</style>
+
+
+<body>
+    <div class="header"><img src="images/Group 8.png" alt="">
+        <span class="jobie"><img src="images/Hire me Now.png" alt=""></span>
+    </div>
+    <div class="left">
+    </div>
+    <div class="right">
+        <div class="login-box">
+            <h2>Sign in to Admin Dashboard</h2>
+            <form name="myForm" onsubmit="return validateForm()">
+                <label>Email</label>
+                <input type="email" name="Email" id="Email" placeholder="input your email here">
+                <p id="emailError"></p>
+                <label>Password</label>
+                <input type="password" name="Password" id="passwd" placeholder="input your password here">
+                <img src="images/eye-no.png" alt="" style="position: absolute; margin-top: 10px; margin-left: -40px; ">
+                <p id="passwdError"></p>
+                <button type="submit">Sign in</button>
+            </form>
+            <div class="pswd"><a href="#" style="color: gray;">Forgot password?</a></div>
+            
+        </div>
+    </div>
+</body>
+<script src="scripts/code.js"></script>
+
+</html>
