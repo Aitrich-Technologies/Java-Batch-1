@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsLetter SignUp</title>
+</head>
+
+
+
+<body style=" padding: 20px;">
+    <h2>Signup Form</h2>
+    <input type="text" id="username" placeholder="Enter your name">
+    <button onclick="signupUser()">Sign Up</button>
+
+    <p id="message" style="margin-top:20px; font-weight:bold; color:green;"></p>
+</body>
+
+
+
+<script>
+    function signupUser() {
+        const name = document.getElementById("username").value.trim();
+
+        if (name === "") {
+            alert("Please enter your name before signing up.");
+            return;
+        }
+
+
+        alert("Thank you, " + name + "! You have successfully signed up.");
+
+
+        document.getElementById("message").textContent = "Welcome, " + name + "!  Thank you for signing up.";
+
+    }
+</script>
+
+</html>

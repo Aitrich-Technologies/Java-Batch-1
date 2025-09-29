@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Subscription Plan Selection</title>
+  <style>
+    .plan {
+      display: inline-block;
+      padding: 15px 25px;
+      margin: 10px;
+      border: 2px solid #333;
+      border-radius: 8px;
+      font-size: 18px;
+      
+    }
+    
+    
+    #message {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h2>Select Your Subscription Plan Here:</h2>
+
+  <div class="plan" onclick="selectPlan('Basic')">Basic</div>
+  <div class="plan" onclick="selectPlan('Premium')">Premium</div>
+
+  <p id="message"></p>
+  
+  <script>
+    var msg=document.getElementById("message");
+    msg.innerText="";
+    function selectPlan(plan) {
+      // let msg = "";
+      if (plan === "Basic") {
+        msg.innerText = "You have selected the Basic Plan ";
+      } else if (plan === "Premium") {
+        msg.innerText = "You have selected the Premium Plan";
+      }
+    }
+  </script>
+</body>
+</html>
