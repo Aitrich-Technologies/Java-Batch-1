@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1 id="myHeading">Original Heading</h1>
+  <button id="changeBtn">Change Heading</button>
+
+  <script>
+    let heading = document.getElementById("myHeading");
+    let btn = document.getElementById("changeBtn");
+
+    btn.addEventListener("click", function() {
+      heading.innerText = "Heading Changed";
+    });
+    </script>
+
+    <!-- <h1 id="myHeading">Original Heading</h1>
+  <button id="changeBtn">Change Heading</button>
+
+  <script>
+    let heading = document.getElementById("myHeading");
+    let btn = document.getElementById("changeBtn");
+
+    btn.addEventListener("click", function() {
+      heading.innerText = "Heading Changed ";
+      heading.style.color="red";
+    });
+  </script> -->
+
+
+  <!-- <h3>My Item List</h3>
+  <ul id="myList">
+    <li>Egg</li>
+    <li>Milk</li>
+  </ul>
+
+  <button id="addBtn">Add Item</button>
+
+  <script>
+    let list = document.getElementById("myList");
+    let btn = document.getElementById("addBtn");
+    let count = 1;
+
+    btn.addEventListener("click", function() {
+      let newItem = document.createElement("li");
+      newItem.innerText = "New Item List ";   
+      list.appendChild(newItem);                 
+      count++;
+    });
+  </script> -->
+
+  <!-- <h3>My List</h3>
+  <ul id="myList">
+    <li>Egg</li>
+    <li>Milk</li>
+  </ul>
+
+  <button id="addBtn">Add Item</button>
+
+  <script>
+    let list = document.getElementById("myList");
+    let btn = document.getElementById("addBtn");
+
+    btn.addEventListener("click", function() {
+      let itemName = prompt("Enter the new item:");
+      if (itemName) { 
+        let newItem = document.createElement("li");
+        newItem.innerText = itemName;
+        list.appendChild(newItem);
+      }
+    });
+  </script> -->
+
+  <!-- <h3 id="myPara">This text will be removed.</h3>
+  <button id="removeBtn">Remove Paragraph</button>
+
+  <script>
+    let para = document.getElementById("myPara");
+    let btn = document.getElementById("removeBtn");
+
+    btn.addEventListener("click", function() {
+      para.remove();
+    });
+  </script> -->
+
+  <!-- <p id="myPara">This Text will change.</p>
+  <button id="removeBtn">Delete Paragraph</button>
+
+  <script>
+    let para = document.getElementById("myPara");
+    let btn = document.getElementById("removeBtn");
+
+    btn.addEventListener("click", function() {
+      para.innerText = "Deleted"; 
+    });
+  </script> -->
+
+</body>
+</html>
