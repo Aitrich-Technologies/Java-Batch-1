@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HireMe Now!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+      background: #f8f8f8;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background: #0f6cbf;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+    .sidebar h2 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      margin: 15px 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+    .sidebar ul li i {
+      margin-right: 10px;
+    }
+    .sidebar ul li:hover {
+      text-decoration: underline;
+    }
+    .add-new {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* Content area */
+    .content {
+      flex: 1;
+      background: white;
+      padding: 20px;
+      overflow-y: auto;
+      display: flex;
+    }
+    .jobs {
+      flex: 1;
+    }
+    .job {
+      margin-bottom: 25px;
+    }
+    .job h3 {
+      margin: 0;
+    }
+    .job small {
+      display: block;
+      margin-top: 4px;
+      color: #555;
+    }
+    .profile {
+      margin-left: 20px;
+    }
+    .profile img {
+      max-width: 400px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>HireMe Now!</h2>
+    <ul>
+      <li><i>📊</i> Dash Board</li>
+      <li><i>💼</i> Jobs</li>
+      <li><i>📑</i> Applications</li>
+      <li><i>🎤</i> Interviews</li>
+      <li><i>💬</i> Messages</li>
+      <li><i>⚙️</i> Settings</li>
+    </ul>
+    <div class="add-new"><i>➕</i> AddNew</div>
+  </div>
+
+  <!-- Content Area -->
+  <div class="content">
+    <div class="jobs">
+      <div class="job">
+        <h3>Social Media Assistant</h3>
+        <small>Location: online</small>
+        <small>Date: 16-06-23</small>
+        <small>Time: 1.00 am</small>
+      </div>
+      <div class="job">
+        <h3>Brand Designer</h3>
+        <small>Location: offline</small>
+        <small>Date: 19-06-23</small>
+        <small>Time: 12.00 pm</small>
+      </div>
+      <div class="job">
+        <h3>Customer Manager</h3>
+        <small>Location: online</small>
+        <small>Date: 20-06-23</small>
+        <small>Time: 12.00 pm</small>
+      </div>
+    </div>
+    <div class="profile">
+      <img src="https://cdn.pixabay.com/photo/2016/11/29/02/53/adult-1868750_960_720.jpg" alt="Interview Image">
+    </div>
+  </div>
+
+  <script>
+    // Example interactivity: clicking "AddNew" adds a job
+    document.querySelector(".add-new").addEventListener("click", function() {
+      const jobList = document.querySelector(".jobs");
+      const newJob = document.createElement("div");
+      newJob.classList.add("job");
+      newJob.innerHTML = `
+        <h3>New Job Position</h3>
+        <small>Location: online</small>
+        <small>Date: ${new Date().toLocaleDateString()}</small>
+        <small>Time: ${new Date().toLocaleTimeString()}</small>
+      `;
+      jobList.appendChild(newJob);
+      alert("New job added!");
+    });
+  </script>
+</body>
+</html>
